@@ -11,6 +11,9 @@ html {
 
 .navbar {
     background-color: #415068;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
 }
 
 .navbar div {
@@ -25,11 +28,13 @@ html {
 .navbar .link {
     display: block;
     text-align: center;
-    padding: 1.2em;
+    padding: 1.5em;
     text-decoration: none;
     background-color: #223047;
     color: white;
     border: 1px solid #223047;
+    height: auto;
+    width: auto;
 }
 
 .navbar .link:hover,
@@ -42,11 +47,12 @@ html {
     width: 11em;
     padding: 1em;
     color: white;
+    margin-left: 18px;
     font-family: "WindSong", cursive;
     font-weight: 400;
     font-style: normal;
     font-size: 1.2em;
-    text-align: center;
+    order: -1;
     
 }
 
@@ -56,8 +62,9 @@ html {
 
 .navbar .toggle {
     color:  #223047;
-    margin-top: 15px;
-    margin-left: 15px;
+    align-content: center;
+    margin-left: auto;
+    margin-right: 20px;
     
 }
 
@@ -88,13 +95,14 @@ html {
         background-color: #223047;
         color: white;
         justify-content: flex-end;
+        align-content: center;
     }
-    
     .navbar .brand {
         text-align: left;
     }
     .navbar.active div {
         display: block;
+        width: 100%;
     }
     
 }
